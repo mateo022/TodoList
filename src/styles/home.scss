@@ -10,9 +10,15 @@
     }
 }
 
-.list-group {
+.list-group-item {
+    display: flex;
+    align-items: center;
+    .icon {
+        margin-left: auto;
+        ;
+    }
     .input {
-        margin-right: 10px;
+        margin-right: 20px;
         ;
     }
 }
