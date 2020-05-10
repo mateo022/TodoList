@@ -1,7 +1,7 @@
 <div class="card my-todo-list">
     <header class="header">
         <h1>TodoList</h1>
-        <input type="text">
+        <input type="text" id="input-task">
     </header>
     <ul class="list-group">
         <li class="list-group-item">
@@ -20,5 +20,20 @@
 
 </div>
 <script>
-    function
+    const icon = 'x';
+    let todoItems = [
+
+    ];
+
+    function updateUI() {
+        const container = document.querySelector('.list-group');
+        container.innerHTML = '';
+        todoItems.forEach((task, i) => {
+            paintTask(task, i);
+        })
+    }
+
+    function paintTask(task, i) {
+        const container = document.querySelector('.list-group');
+    }
 </script>
